@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+- story: saludo y despedida sencilla
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: conversación estado de ánimo bueno
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- story: conversación estado de ánimo malo
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: confirmación y negación
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+  - intent: deny
+  - action: utter_deny

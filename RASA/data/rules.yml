@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+- rule: Responder saludo
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Responder despedida
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Responder afirmación
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Responder negación
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Responder buen ánimo
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- rule: Responder mal ánimo
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- rule: Responder challenge bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
